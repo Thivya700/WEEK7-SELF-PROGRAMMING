@@ -1,0 +1,32 @@
+package selfprogramming;
+import java.util.Scanner;
+
+public class Banking {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		final int PSW = 1234;
+		int cuspsw;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter your PIN number : ");
+		cuspsw = scan.nextInt();
+		
+		do {
+			System.out.println("Enter your PIN number : ");
+			cuspsw = scan.nextInt();
+		}
+		while(cuspsw != PSW);
+			
+			
+			if(cuspsw == PSW) {
+				System.out.println("Login Successfull!");
+				 System.out.println("Your Balance is RM 700");
+			}
+				 
+			
+		}
+
+	}
+
+
