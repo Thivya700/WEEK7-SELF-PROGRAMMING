@@ -1,0 +1,29 @@
+package selfprogramming;
+import java.util.Scanner;
+
+public class Cashier {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double price;
+		double total = 0.0;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Cashier system");
+		
+		System.out.print("Enter price or 0 to quit: ");
+		price = scan.nextDouble();
+
+		while (price != 0)
+		{
+			total = total + price; // add item price to total
+			
+			System.out.print("Enter price or 0 to quit: ");
+			price = scan.nextDouble();
+		}
+		
+		System.out.println("Total price is " + total);
+
+	}
+
+}
