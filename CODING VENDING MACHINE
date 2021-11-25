@@ -1,0 +1,30 @@
+package selfprogramming;
+import java.util.Scanner;
+
+public class VendingMachine {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double price = 5;
+		double amount;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the money: ");
+		amount = scan.nextDouble();
+		
+		while(amount<price) {
+			System.out.println("Please insert sufficient funds");
+	        amount = amount + scan.nextDouble();
+	        
+	        if (amount == price)
+				System.out.println("Thank you!");
+				
+		else if (amount>price) 
+				System.out.println("Your balance is " + (amount-price));
+			
+		}
+	}
+}
+
+	
+
+
