@@ -1,0 +1,35 @@
+package exercise;
+import java.util.Scanner;
+
+public class Exercise5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		final int PSW = 1234;
+		int cuspsw;
+		int count = 0;
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter your PIN number : ");
+		cuspsw = scan.nextInt();
+		
+		if (cuspsw == PSW)
+		{
+			System.out.println("Access Successfull!");
+		}
+		else
+		{
+			do {
+				System.out.println("Enter your PIN number : ");
+				cuspsw = scan.nextInt();
+				
+				count++;
+			}
+			while(count < 2);
+			System.out.println("Invalid Card. Please verify with the bank.");
+		}
+				
+
+	}
+
+}
